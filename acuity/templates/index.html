@@ -1,0 +1,22 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+  <head>
+    {% include "_header.html" %}
+  </head>
+ 
+  <body>
+    <div id="wrapper">
+       {% include "_toolbar.html" %}
+       <div id="content">
+          <iframe id="results" name="results" frameborder="0"></iframe>
+       </div>
+       <div style="clear:both"></div>
+    </div>
+    <div id="option-ctrl">
+      <ul>
+        <li><input type='checkbox' name='enable_scrolling' id='auto-scroll'/><span> Auto scroll?</span></li>
+      </ul>
+    </div>
+  </body>
+</html>
+

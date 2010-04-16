@@ -1,0 +1,2 @@
+To start the Twisted server, execute:
+$ twistd -ny server.py

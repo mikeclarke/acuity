@@ -1,0 +1,28 @@
+      <div id='toolbar'>
+      <div id='header'>
+          <h1><a href="/">Acuity</a>  <span class='small' style='color:#aaa'>Log Search Tool</span></h1>
+
+      </div>
+
+      <form id='logform' method='post' action='/perform' target='results'>
+          <div id='tools'>
+            <h2>Action</h2>
+            <input type='radio' name='tool' value='grep' id='grep-tool' checked='checked'> <span class='label' id='grep-label'>Search</span>
+            <br />
+            <input type='radio' name='tool' value='tail' id='tail-tool'> <span class='label' id='tail-label'>Tail</span> 
+            <br />
+
+          </div>
+          <div id='searchterm'>
+            <h2>Search Terms</h2>
+            <input type='text' id='term' name='term' />
+            <span class='note'><a href='#' onclick='Search.clear(); return false;'>clear</a></span>
+          </div>
+          <div id='logfiles'>
+            <h2>Log File</h2>
+            <div id='file-selector'></div>
+            <input type='hidden' id='file' name='file' />
+          </div>
+      </form>
+    </div>
+    

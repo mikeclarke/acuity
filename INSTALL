@@ -1,0 +1,10 @@
+(assume python2.6 with sqlite, setuptools)
+easy_install -U pip
+pip install -U virtualenv
+cd /install/directory/location/
+virtualenv --no-site-packages acuity
+cd acuity/
+source bin/activate
+pip install django
+pip install twisted
+twistd -ny server.py
